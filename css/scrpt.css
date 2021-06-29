@@ -462,8 +462,8 @@ html {
   color: black;
   text-decoration: none;
   font-size: 120%;
-  -webkit-transition: linear 0.3s ease;
-  transition: linear 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .explore .explore-button:hover {
@@ -943,8 +943,8 @@ html {
   padding: 10px 25px;
   border: black 2px solid;
   border-radius: 30px;
-  background-color: black;
-  color: #f0eee0;
+  background-color: #f0eee0;
+  color: black;
   text-decoration: none;
   line-height: 120%;
   -webkit-transition: all 0.3s ease;
@@ -952,6 +952,11 @@ html {
   position: relative;
   left: 2%;
   top: 1px;
+}
+
+.cult .input a:hover {
+  background-color: black;
+  color: #f0eee0;
 }
 
 @media only screen and (max-width: 700px) {
@@ -1121,8 +1126,8 @@ html {
   color: black;
   text-decoration: none;
   font-size: 15px;
-  -webkit-transition: linear 0.3s ease;
-  transition: linear 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .top-footer .with-input a:hover {

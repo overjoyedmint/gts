@@ -2,15 +2,23 @@
   "name": "gts",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
-    "deply": "gh-pages -d dist"
+"deploy": "gh-pages -d "
+
+
   },
- 
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/overjoyedmint/gts.git"
+  },
   "keywords": [],
   "author": "",
   "homepage":"https://overjoyedmint.github.io/gts",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/overjoyedmint/gts/issues"
+  },
 
   "dependencies": {
     "gh-pages": "^3.2.3"
