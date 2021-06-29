@@ -8,6 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="./scrpt.css">
     <link rel="stylesheet" href="./css/scrpt.css">
+    <link rel="stylesheet" href="./glide.core.min.css">
+    <link rel="stylesheet" href="./glide.theme.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
@@ -33,6 +35,8 @@
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
 
+        <link rel="stylesheet" href="./glide.theme.min.css">
+        <link rel="stylesheet" href="./glide.core.min.css">
 
 </head>
 <body>
@@ -541,9 +545,11 @@ with you.”</h1> </div>
 
 </div>
 
-<div class="bottom-slider-all"><div class="bottom-slider">
+<div class="bottom-slider-all">
+    <div class="bottom-slider">
 
-<div class="glider-contain">
+
+<!-- <div class="glider-contain">
     <div class="glider">
         <div><img src="./gts-images/ALIVE_image_for_website.jpg" alt=""></div>
         <div><img src="./gts-images/flavor.jpg" alt=""></div>
@@ -558,9 +564,29 @@ with you.”</h1> </div>
 
        
     </div>
+    </div> -->
+
+
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+                <div><img src="./gts-images/ALIVE_image_for_website.jpg" alt=""></div>
+                <div><img src="./gts-images/flavor.jpg" alt=""></div>
+                <div><img src="./gts-images/green.jpg" alt=""></div>
+                
+             
+                <div><img src="./gts-images/tumeric.jpg" alt=""></div>
+                <div><img src="./gts-images/cup.jpg" alt=""></div>
+            </ul>
+        </div>
+        
+
+
+
     </div>
 
-</div></div>
+</div>
+</div>
 
 
 
@@ -649,10 +675,10 @@ with you.”</h1> </div>
 
 
 
-
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
-
-
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script src="https://unpkg.com/@glidejs/glide"></script>
+<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
 
 
 
@@ -664,6 +690,47 @@ with you.”</h1> </div>
 <script src="./glide/splide.min.js"></script>
 <script src="./glide/splide.esm.js"></script>
 <script src="./glide/splide.js"></script>
+<script>
+
+
+const config={
+type:'carousel',
+perView:3.5,
+    autoplay: 3500,
+    hoverpause: false,
+       
+bound: true, focusAt: 0,
+
+
+    breakpoints: {
+
+
+         1250: {
+            perView: 2.4,
+            focusAt: 2,
+            bound: true,
+
+
+          
+        },
+       
+        767: {
+            perView: 1.4,
+            focusAt: 1.2,
+            bound: true,
+
+           
+                
+        }
+    }
+
+}
+
+
+    new Glide('.glide',config).mount()
+</script>
+
+
 
 </body>
 </html>

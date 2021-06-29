@@ -1,3 +1,9 @@
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -858,10 +864,10 @@ html {
   }
 }
 
-.glider {
+.glide__slides {
   background-color: rgb(240, 238, 224);
   div {
-    padding: 1.2%;
+    padding: 0.5%;
   }
   img {
     height: 100%;
